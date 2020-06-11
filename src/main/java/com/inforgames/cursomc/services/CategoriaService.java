@@ -11,6 +11,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import com.inforgames.cursomc.domain.Categoria;
+import com.inforgames.cursomc.dto.CategoriaDTO;
 import com.inforgames.cursomc.repositories.CategoriaRepository;
 import com.inforgames.cursomc.services.exceptions.ObjectNotFoundException;
 
@@ -54,4 +55,8 @@ public class CategoriaService {
 		return repo.findAll(pageRequest);
 	}
 
+	public Categoria fromDTO(CategoriaDTO objDto) {
+		return new Categoria(objDto.getId(), objDto.getNome());
+	}
+	
 }
