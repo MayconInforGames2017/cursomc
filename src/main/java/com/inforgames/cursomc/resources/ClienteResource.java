@@ -17,9 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.inforgames.cursomc.domain.Categoria;
 import com.inforgames.cursomc.domain.Cliente;
-import com.inforgames.cursomc.dto.CategoriaDTO;
 import com.inforgames.cursomc.dto.ClienteDTO;
 import com.inforgames.cursomc.dto.ClienteNewDTO;
 import com.inforgames.cursomc.services.ClienteService;
